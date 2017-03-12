@@ -1,0 +1,6 @@
+ansible_ssh_user: dwarika
+ansible_ssh_pass: 2390
+ansible_ssh_port: 5985
+ansible_connection: winrm
+ansible_winrm_server_cert_validation: ignore
+ansible_temp_directory: /home/dwarika/tmp/ansible_ssh

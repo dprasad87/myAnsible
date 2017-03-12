@@ -1,0 +1,15 @@
+---
+ - hosts: all
+   user: dwarika
+
+   vars_files:
+   - secret
+
+   tasks:
+    - name: install VirtualBox using apt
+      apt:
+        name: '{{ package }}'
+        update_cache: yes
+        state: present
+      become: true
+#      shell: ls -ltr /      
